@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURORA</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(125deg, #020024, #090979, #00d4ff, #02edaa, #090979);
+            background-size: 400% 400%;
+            animation: auroraEffect 15s ease infinite;
+            overflow-x: hidden;
+        }
+
+        
+        @keyframes auroraEffect {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Şeffaf ve şık içerik kartı */
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 3rem;
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 0 0 15px rgba(0, 212, 255, 0.6);
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+            font-style: italic;
+        }
+
+        .quote {
+            margin: 25px 0;
+            font-size: 1rem;
+            border-left: 3px solid #02edaa;
+            padding-left: 15px;
+            text-align: left;
+        }
+
+        /* Aurora tarzı parıldayan buton */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            color: #020024;
+            background: #02edaa;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(2, 237, 170, 0.4);
+        }
+
+        .btn:hover {
+            background: #00d4ff;
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px rgba(0, 212, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>AURORA</h1>
+        <p>Aksnes sevenler kulübüne hoş geldin. Evrenin en saf sesine ve masalsı dünyasına ufak bir yolculuk...</p>
+        
+        <div class="quote">
+            "And I need a place to go... Don't forgive me, cause I'm running away."
+        </div>
+
+        <a href="https://www.youtube.com/@AURORAMUSIC" target="_blank" class="btn">Müziğe Dokun</a>
+    </div>
+
+</body>
+</html>
